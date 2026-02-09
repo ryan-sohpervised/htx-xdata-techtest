@@ -1,0 +1,4 @@
+Metric,Validation Set,Test Set,Difference
+RMSE ($),89261.43,90013.16,+751.73
+MAE ($),62076.25,61180.88,-895.38
+MAPE (%),13.54,13.10,-0.44
