@@ -1,12 +1,12 @@
 # HDB Resale Price Prediction
 
-A machine learning project to predict HDB (Housing and Development Board) resale flat prices in Singapore using historical transaction data and advanced modeling techniques.
+A machine learning project analyzing HDB (Housing and Development Board) resale data in Singapore, including price prediction modeling and link analysis of transactions. A neural network for price prediction is also trained on the graph.
 
 ## Installation
 
 ### Prerequisites
-- Python 3.12 or higher
-- pip (Python package manager)
+- Python 3.12
+- pip
 
 ### Setup
 
@@ -29,26 +29,22 @@ This will install all required packages including:
 - Model interpretation: `shap`
 - Visualization: `matplotlib`, `seaborn`, `plotly`
 
-3. Launch the Jupyter notebook:
-```bash
-jupyter notebook model_prediction_task/model_prediction_task.ipynb
-```
-
 ## Project Structure
 
 ```
 ├── data/
 │   └── HDB/                    # Historical HDB resale price data
 ├── model_prediction_task/
-│   └── model_prediction_task.ipynb    # Main analysis and modeling notebook
+│   └── model_prediction_task.ipynb    # Price prediction modeling
+├── link_analysis_task/
+│   └── link_analysis.ipynb     # Link analysis of transactions
 ├── requirements.txt            # Python dependencies
 └── README.md                   # This file
 ```
 
 ## Quick Start
 
-Open the Jupyter notebook `model_prediction_task/model_prediction_task.ipynb` and run the cells to:
-- Load and explore the HDB resale data
-- Perform data preprocessing and feature engineering
-- Train and evaluate prediction models
-- Visualize results and model performance
+The project includes two main tasks:
+
+1. **Model Prediction** - Open `model_prediction_task/model_prediction_task.ipynb` to train and evaluate price prediction models
+2. **Link Analysis** - Open `link_analysis_task/link_analysis.ipynb` to analyze transaction patterns and relationships
