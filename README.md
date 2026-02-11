@@ -34,6 +34,7 @@ This will install all required packages including:
 ```
 ├── data/
 │   └── HDB/                    # Historical HDB resale price data
+│       └── separate/           # folder for the 5 data files
 ├── model_prediction_task/
 │   └── model_prediction_task.ipynb    # Price prediction modeling
 ├── link_analysis_task/
@@ -48,3 +49,6 @@ The project includes two main tasks:
 
 1. **Model Prediction** - Open `model_prediction_task/model_prediction_task.ipynb` to train and evaluate price prediction models
 2. **Link Analysis** - Open `link_analysis_task/link_analysis.ipynb` to analyze transaction patterns and relationships
+
+IMPORTANT NOTE: The original data files need to be loaded into 'data/HDB/separate'. 
+The model prediction notebook has to be run before the link analysis notebook as the former generates the data file for the latter.
